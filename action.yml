@@ -1,0 +1,7 @@
+name: 'GulpeaseAction'
+author: 'Gianmarco Pettinato <gianmarco.pettinato@gmail.com>'
+description: 'performs the Gulpease evaluation on yours PDFs'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
