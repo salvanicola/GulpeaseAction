@@ -31,3 +31,5 @@ jobs:
         name: Documents
         path: <where the pdf files are stored>
 ```
+## DISCLAIMER
+This software is based on [aspell](aspell.net)
