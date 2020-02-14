@@ -1,5 +1,6 @@
-# spellCheck
-GitHub Action for spell checking for pdf files
+# GulpeaseAction
+GitHub Action for evaluating the Gulpease index for documents written in Italian
+
 # Aspected inputs
 `directory:<where the pdf files are stored>`
 
@@ -31,5 +32,3 @@ jobs:
         name: Documents
         path: <where the pdf files are stored>
 ```
-## DISCLAIMER
-This software is based on [aspell](aspell.net)
