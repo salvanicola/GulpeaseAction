@@ -10,7 +10,7 @@ testo = str(textract.process(nf))
 
 parole  = len(re.findall(r'\w+', testo))
 lettere = len(re.findall(r'\w', testo))
-punti = len(re.findall('[.]+\s', testo))+len(re.findall('[;]+\s', testo)) - len(re.findall('[.]+\s+[.]', testo))
+punti = len(re.findall('[.]+\s', testo) - len(re.findall('[.]+\s+[.]', testo)))
 
 indiceG=89+((300*punti)-(10*lettere))/parole
 print("numero di parole presenti nei doc :   " + str(parole))
@@ -22,7 +22,7 @@ if parole!=0:
         indiceG=100
 
     print("indice di Gulpease restrittivo : " + str(indiceG))
-    punti = len(re.findall('[.]', testo)) + len(re.findall('[;]', testo))
+    punti = len(re.findall('[.]', testo))
     indiceG = 89 + ((300 * punti) - (10 * lettere)) / parole
     if indiceG>100:
         indiceG=100
